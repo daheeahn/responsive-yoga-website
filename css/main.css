@@ -5,3 +5,15 @@
   text-decoration: none;
   list-style: none;
 }
+
+body {
+  background-color: #f5f0ff;
+}
+body:has(#toggle-mode:checked) {
+  background-color: #14092a;
+}
+
+/*
+  추후 요소 속성 바꿀 때 아래와 같이 사용
+  #toggle-mode:checked ~ .hi
+*/
