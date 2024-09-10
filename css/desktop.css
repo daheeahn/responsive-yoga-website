@@ -5,20 +5,24 @@
     display: flex;
     flex-direction: row;
     padding: 0px 160px;
-    /* border: 1px solid black; */
-    gap: 30px;
+    border: 1px solid black;
+    gap: 50px;
+    justify-content: center;
   }
   .anytime-container .left-box {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex: 1;
-    /* background-color: lightcoral; */
+    min-width: 400px;
+    max-width: 550px;
+    padding-bottom: 120px;
+    background-color: lightcoral;
   }
   .anytime-container .right-box {
     display: flex;
     flex-direction: column;
-    flex: 1.3;
-    /* background-color: pink; */
+    background-color: pink;
   }
   .anytime-container h1 {
     font-weight: 400;
@@ -50,8 +54,19 @@
     line-height: 24px;
     align-self: flex-start;
   }
-  .anytime-container img {
+  .anytime-container > .left-box img {
     width: 24px;
     height: 24px;
+  }
+  #yoga-img-1 {
+  }
+  #yoga-img-2 {
+    max-width: 500px;
+    max-height: 340px;
+    object-fit: contain;
+  }
+
+  #invisible-yoga-img {
+    opacity: 0;
   }
 }
