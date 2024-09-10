@@ -1,4 +1,72 @@
 /* Desktop */
 
 @media (min-width: 700px) {
+
+ /* 기본 라이트 모드 스타일 */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --nav-bg-color: lightgray;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    padding: 20px;
+}
+
+nav a {
+    color: var(--text-color);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: var(--nav-bg-color);
+    padding: 10px;
+    text-align: center;
+}
+
+/* 체크박스가 체크되었을 때 다크 모드 적용 */
+#dark-mode-toggle:checked ~ .content {
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+    --nav-bg-color: #333;
+}
+
+#dark-mode-toggle:checked ~ .content nav a {
+    color: var(--text-color);
+}
+
+#dark-mode-toggle:checked ~ .content footer {
+    background-color: var(--nav-bg-color);
+}
+
+/* 시스템 설정에 따른 다크 모드 감지 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #121212;
+        --text-color: #f5f5f5;
+        --nav-bg-color: #333;
+    }
+}
+
+  .logo {
+    background: linear-gradient(to left, #8b52ff, #ff52ae);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    background-size: 50px;
+  }
+
+
+
+
+  
 }
