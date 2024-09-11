@@ -269,4 +269,65 @@
     width: 24px;
     height: 24px;
   }
+
+  footer {
+    padding: 48px 24px;
+    background-color: #1e0849;
+  }
+  footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #a197b4;
+    max-width: 200px;
+  }
+  footer h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  footer > .top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .yoga-info h1 {
+    background: linear-gradient(73.19deg, #ff52af 11.6%, #9f53ff 83.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-self: flex-start;
+  }
+  footer .info-section h1 {
+    color: #fff;
+  }
+  footer > .division {
+    border: 0.5px solid #a197b4;
+    margin: 48px 0px;
+  }
+  footer > .bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .social-icon-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  footer .social-icon-list img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  footer .copyright-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #a197b4;
+  }
 }
