@@ -93,7 +93,7 @@
     color: #4b3e65;
     margin-bottom: 32px;
   }
-  .anytime-container button {
+  .anytime-container .left-box button {
     display: flex;
     flex-direction: row;
     justify-content: center;
