@@ -13,6 +13,11 @@ body:has(#toggle-mode:checked) {
   background-color: #14092a;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 /*
   추후 요소 속성 바꿀 때 아래와 같이 사용
   #toggle-mode:checked ~ .hi
