@@ -209,6 +209,7 @@
     background: linear-gradient(73.19deg, #ff52af 11.6%, #9f53ff 83.86%);
     border-radius: 32px;
     align-self: center;
+    margin-bottom: 88px;
   }
   .join-container > h1 {
     font-weight: 400;
@@ -230,7 +231,6 @@
   .subscribe-input-container {
     display: flex;
     flex-direction: row;
-
     min-width: 300px;
     padding: 8px 8px 8px 24px;
     background: #ffffff;
@@ -269,6 +269,75 @@
     height: 24px;
   }
 
+  footer {
+    padding: 64px 160px;
+    background-color: #1e0849;
+  }
+  footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #a197b4;
+    max-width: 220px;
+  }
+  footer h1 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  footer > .top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 900px;
+    /* background-color: pink; */
+  }
+  footer .info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer .yoga-info h1 {
+    background: linear-gradient(73.19deg, #ff52af 11.6%, #9f53ff 83.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-self: flex-start;
+  }
+  footer .right-info-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 72px;
+  }
+  footer .info-section h1 {
+    color: #fff;
+  }
+  footer > .division {
+    border: 0.5px solid #a197b4;
+    margin: 48px 0px;
+  }
+  footer > .bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer .social-icon-list {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  footer .social-icon-list img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+  footer .copyright-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: #a197b4;
+  }
+
   /* 기본 라이트 모드 스타일 */
   :root {
     /* --bg-color: white; */
@@ -292,12 +361,6 @@
     color: var(--text-color);
     margin: 0 10px;
     text-decoration: none;
-  }
-
-  footer {
-    background-color: var(--nav-bg-color);
-    padding: 10px;
-    text-align: center;
   }
 
   /* 체크박스가 체크되었을 때 다크 모드 적용 */
