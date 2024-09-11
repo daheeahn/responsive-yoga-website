@@ -296,6 +296,11 @@
     flex-direction: column;
     gap: 20px;
   }
+  footer .right-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
   footer .yoga-info h1 {
     background: linear-gradient(73.19deg, #ff52af 11.6%, #9f53ff 83.86%);
     -webkit-background-clip: text;
@@ -311,8 +316,9 @@
   }
   footer > .bottom-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
   footer .social-icon-list {
     display: flex;
