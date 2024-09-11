@@ -17,21 +17,76 @@
     min-width: 400px;
     max-width: 550px;
     padding-bottom: 120px;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
   }
   .anytime-container .right-box {
+    position: relative;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    background-color: pink;
+    /* background-color: pink; */
   }
-  .anytime-container h1 {
+  .anytime-container .right-box .box-routine {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 8px;
+    gap: 8px;
+
+    position: absolute;
+    background: #ffffff;
+    border-radius: 16px;
+    z-index: 3;
+    align-self: flex-start;
+  }
+  .anytime-container .right-box .box-routine-1 {
+    top: 80px;
+    right: -40px;
+  }
+  .anytime-container .right-box .box-routine-2 {
+    top: 450px;
+    left: 70px;
+  }
+  .anytime-container .right-box .box-routine img {
+    width: 22px;
+    height: 30px;
+    object-fit: contain;
+  }
+  .anytime-container .right-box .box-routine p {
+    font-weight: 500;
+    font-size: 16px;
+    background: linear-gradient(73.19deg, #ff52af 11.6%, #9f53ff 83.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  #yoga-img-1 {
+    max-width: 500px;
+    max-height: 340px;
+    object-fit: contain;
+    z-index: 2;
+    position: relative;
+    border: 10px solid #f5f0ff;
+    border-radius: 170px;
+  }
+  #yoga-img-2 {
+    max-width: 500px;
+    max-height: 340px;
+    object-fit: contain;
+    position: absolute;
+    top: 220px;
+    right: -100px;
+    z-index: 1;
+  }
+  .anytime-container .left-box h1 {
     font-weight: 400;
     font-size: 64px;
     line-height: 82px;
     color: #220953;
     margin-bottom: 40px;
   }
-  .anytime-container p {
+  .anytime-container .left-box p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -58,27 +113,17 @@
     width: 24px;
     height: 24px;
   }
-  #yoga-img-1 {
-  }
-  #yoga-img-2 {
-    max-width: 500px;
-    max-height: 340px;
-    object-fit: contain;
-  }
-  #invisible-yoga-img {
-    opacity: 0;
-  }
 
   /* 기본 라이트 모드 스타일 */
   :root {
-    --bg-color: white;
-    --text-color: black;
-    --nav-bg-color: lightgray;
+    /* --bg-color: white; */
+    /* --text-color: black; */
+    /* --nav-bg-color: lightgray; */
   }
 
   body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    /* background-color: var(--bg-color); */
+    /* color: var(--text-color); */
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
   }
