@@ -330,4 +330,65 @@
     line-height: 20px;
     color: #a197b4;
   }
+
+  /* nav */
+  nav {
+    display: flex;
+    height: 88px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 24px;
+  }
+  .logo {
+    background: linear-gradient(to left, #8b52ff, #ff52ae);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    background-size: 50px;
+    font-family: Lora;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* side menu */
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -280px; /* 화면 오른쪽 밖으로 숨기기 */
+    width: 280px;
+    height: 100vh; /* 전체 높이로 설정 */
+    background-color: #1a1a1a;
+    opacity: 0.9; /* 투명도 */
+    z-index: 10;
+    transition: transform 0.3s ease; /* 부드러운 이동 효과 */
+    transform: translateX(280px); /* 오른쪽에서 들어오게 설정 */
+  }
+
+  .menu-checkbox:checked ~ .menu {
+    display: flex;
+    gap: 48px;
+    font-family: poppins;
+    font-size: 15px;
+    font-weight: 500;
+    transform: translateX(0); /* 원래 위치로 이동하여 화면에 보이게 함 */
+    right: 0;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+    cursor: pointer;
+  }
+
+  .menu-checkbox {
+    display: none; /* 체크박스는 화면에 보이지 않음 */
+  }
 }

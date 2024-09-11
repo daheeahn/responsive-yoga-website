@@ -9,6 +9,8 @@
 body {
   background-color: #f5f0ff;
 }
+
+/* dark mode */
 body:has(#toggle-mode:checked) {
   background-color: #14092a;
 }
@@ -17,11 +19,33 @@ main {
   display: flex;
   flex-direction: column;
 }
+body:has(#toggle-mode:checked) .light-icon {
+  display: inline;
+}
+
+body:has(#toggle-mode:checked) .dark-icon {
+  display: none;
+}
+
+.light-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  display: none;
+}
+
+.dark-icon {
+  font-size: 1.5rem;
+}
+
+.navbar input {
+  display: none;
+}
 
 /*
   추후 요소 속성 바꿀 때 아래와 같이 사용
   #toggle-mode:checked ~ .hi
 */
+
 /* font */
 .lora-regular {
   font-family: "Lora", serif;
