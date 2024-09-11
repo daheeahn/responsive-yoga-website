@@ -14,6 +14,29 @@ body {
 body:has(#toggle-mode:checked) {
   background-color: #14092a;
 }
+body:has(#toggle-mode:checked) {
+  .anytime-container .left-box h1 {
+    color: #d1c0f1;
+  }
+  .anytime-container .left-box p {
+    color: #a094b8;
+  }
+  .anytime-container .right-box .box-routine {
+    background: #372a51;
+  }
+  .follow-container > .h1-follow-us {
+    color: #d1c0f1;
+  }
+  #yoga-img-1 {
+    border: 5px solid #14092a;
+  }
+  .follow-img {
+    border: 4px solid #372a51;
+  }
+  footer {
+    background-color: #14092a;
+  }
+}
 
 main {
   display: flex;
