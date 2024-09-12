@@ -350,7 +350,7 @@
     -webkit-background-clip: text;
     color: transparent;
     font-size: 1.5rem;
-    background-size: 50px;
+    background-size: 60px;
     font-family: Lora;
   }
 
@@ -397,4 +397,98 @@
   .menu-checkbox {
     display: none; /* 체크박스는 화면에 보이지 않음 */
   }
+
+/*hero section (section1)*/
+.hero-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding: 40px 24px 32px 24px; */
+  }
+
+  .hero-section-container img {
+    width: 320px;
+  }
+
+  .hero-section-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-section-text h1 {
+    font-size: 2.75rem;
+    font-family: Lora;
+    font-weight: 500;
+    color: #220953;
+    line-height: 135%;
+  }
+
+  .yoga-rectangle {
+    width: 123px;
+    height: 66px;
+    background: linear-gradient(135deg, #8b52ff, #ff52ae);
+    border-radius: 15px;
+    padding: 0px 15px 10px 10px;
+    color: white;
+    transform: rotate(10deg);
+    display: inline-block;
+  }
+
+
+  .hero-section-text p {
+    font-size: 0.938rem;
+    font-weight: 400;
+    font-family: poppins;
+    margin-top: 19px;
+    color: #4B3E65;
+  }
+
+  .mobile-hero-line-break::after {
+    content: '\A'; /* 줄바꿈 */
+    white-space: pre; /* 줄바꿈을 처리할 수 있도록 설정 */
+}
+
+  .hero-section-text button {
+    background: linear-gradient(135deg, #8b52ff, #ff52ae);
+    font-size: 1rem;
+    font-family: poppins;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 1em 1.5em;
+    width: 13em;
+    margin-top: 24px;
+  }
+
+  .hero-section-number-container {
+    display: flex;
+    gap: 1.75em;
+    margin-top: 32px;
+  }
+
+  .hero-section-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #220953;
+  }
+
+  .hero-section-number h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: Lora;
+  }
+
+  .hero-section-number p {
+    font-size: 0.875rem;
+    font-family: poppins;
+    font-weight: 400;
+  }
+    
+
 }

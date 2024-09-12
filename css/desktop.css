@@ -434,7 +434,7 @@
     line-height: 130%;
   }
 
-  .hero-section-text span {
+  .yoga-rectangle {
     width: 238px;
     height: 131px;
     background: linear-gradient(135deg, #8b52ff, #ff52ae);
@@ -453,16 +453,29 @@
     color: #4B3E65;
   }
 
+  .desktop-hero-line-break::after {
+    content: '\A'; /* 줄바꿈 */
+    white-space: pre; /* 줄바꿈을 처리할 수 있도록 설정 */
+}
+
+
   .hero-section-text button {
     background: linear-gradient(135deg, #8b52ff, #ff52ae);
+    padding: 1em 1.5em;
+    width: 13em;
+    margin-top: 32px;
+    display: flex;
+    gap: 30px;
     font-size: 1rem;
     font-family: poppins;
     border-radius: 50px;
     border: none;
     color: white;
-    padding: 1em 1.5em;
-    width: 13em;
-    margin-top: 32px;
+  }
+
+  .button-arrow {
+    width: 24px;
+    justify-content: flex-end;
   }
 
   .hero-section-number-container {
@@ -490,4 +503,65 @@
     font-family: poppins;
     font-weight: 400;
   }
+
+  /* section2 */
+  .section2-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .section2-container h2{
+    font-size: 3.5rem;
+    font-weight: 500;
+    font-family: Lora;
+    margin-right: 32px;
+  }
+
+
+  .section2-container p{
+    width: 340px;
+    margin-left:48px;
+    margin-right:16px;
+    font-weight: 300;
+    font-family: poppins;
+  }
+
+
+  .next-container {
+    position: relative; /* 자식 요소를 절대 위치로 배치하기 위한 상대적 위치 설정 */
+    width: 200px; /* 컨테이너 너비 설정 */
+    height: 200px; /* 컨테이너 높이 설정 */
+  }
+  
+  .ellipse-image {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* 이미지가 컨테이너의 중앙에 위치 */
+    width: 150px; /* 이미지 크기를 컨테이너 크기에 맞춤 */
+    height: auto; /* 자동으로 높이 조정 */
+    z-index: 1; /* 이미지가 버튼 뒤로 오도록 설정 */
+  }
+  
+  .next-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 버튼을 컨테이너의 중앙에 위치 */
+    z-index: 2; /* 버튼이 이미지 위에 표시되도록 설정 */
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    background: linear-gradient(to left, #8b52ff, #ff52ae);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: poppins;
+  }
+  
+  .next-arrow {
+    margin-left: 8px;
+    width: 14px;
+    height: 14px;
+  }
+  
 }
