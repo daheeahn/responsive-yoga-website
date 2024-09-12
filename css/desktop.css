@@ -370,42 +370,124 @@
 
   #dark-mode-toggle:checked ~ .content footer {
     background-color: var(--nav-bg-color);
-    /* nav */
-    nav {
-      display: flex;
-      height: 88px;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 160px;
-    }
+  }
+  /* nav */
+  nav {
+    display: flex;
+    height: 88px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 160px;
+  }
 
-    .logo {
-      background: linear-gradient(to left, #8b52ff, #ff52ae);
-      -webkit-background-clip: text;
-      color: transparent;
-      font-size: 1.5rem;
-      background-size: 50px;
-      font-family: Lora;
-    }
+  .logo {
+    background: linear-gradient(to left, #8b52ff, #ff52ae);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    background-size: 60px;
+    font-family: Lora;
+  }
 
-    .navbar {
-      display: flex;
-      gap: 72px;
-      font: 1rem;
-      font-family: poppins;
-      font-weight: 500;
-    }
+  .navbar {
+    display: flex;
+    gap: 72px;
+    font: 1rem;
+    font-family: poppins;
+    font-weight: 500;
+  }
 
-    .menu {
-      display: flex;
-      gap: 72px;
-    }
-    .close-button {
-      display: none; /* 데스크탑에서는 닫기 버튼 숨기기 */
-    }
+  .menu {
+    display: flex;
+    gap: 72px;
+  }
+  .close-button {
+    display: none;
+  }
 
-    .menu-icon {
-      display: none; /* 데스크탑에서는 햄버거 아이콘 숨기기 */
-    }
+  .menu-icon {
+    display: none;
+  }
+
+  /*hero section (section1)*/
+  .hero-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-section-container img {
+    margin-left: -1.5rem;
+  }
+
+  .hero-section-text {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+  }
+
+  .hero-section-text h1 {
+    font-size: 6rem;
+    font-family: Lora;
+    font-weight: 500;
+    color: #220953;
+    line-height: 130%;
+  }
+
+  .hero-section-text span {
+    width: 238px;
+    height: 131px;
+    background: linear-gradient(135deg, #8b52ff, #ff52ae);
+    border-radius: 15px;
+    padding: 0px 15px 10px 10px;
+    color: white;
+    transform: rotate(10deg);
+    display: inline-block;
+  }
+
+  .hero-section-text p {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: poppins;
+    margin-top: 20px;
+    color: #4B3E65;
+  }
+
+  .hero-section-text button {
+    background: linear-gradient(135deg, #8b52ff, #ff52ae);
+    font-size: 1rem;
+    font-family: poppins;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 1em 1.5em;
+    width: 13em;
+    margin-top: 32px;
+  }
+
+  .hero-section-number-container {
+    display: flex;
+    gap: 4em;
+    margin-top: 48px;
+  }
+
+  .hero-section-number {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #220953;
+  }
+
+  .hero-section-number h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: Lora;
+  }
+
+  .hero-section-number p {
+    font-size: 0.875rem;
+    font-family: poppins;
+    font-weight: 400;
   }
 }
