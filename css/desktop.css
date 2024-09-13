@@ -537,10 +537,10 @@
     position: absolute;
     top: 50%; 
     left: 50%;
-    transform: translate(-50%, -50%); /* 이미지가 컨테이너의 중앙에 위치 */
-    width: 150px; /* 이미지 크기를 컨테이너 크기에 맞춤 */
-    height: auto; /* 자동으로 높이 조정 */
-    z-index: 1; /* 이미지가 버튼 뒤로 오도록 설정 */
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: auto;
+    z-index: 1;
   }
   
   .next-button {
@@ -563,5 +563,12 @@
     width: 14px;
     height: 14px;
   }
-  
+
+  .section2-image{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+  }
 }
