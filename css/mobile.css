@@ -345,6 +345,7 @@
     align-items: center;
     padding: 0px 24px;
   }
+
   .logo {
     background: linear-gradient(to left, #8b52ff, #ff52ae);
     -webkit-background-clip: text;
@@ -352,6 +353,13 @@
     font-size: 1.5rem;
     background-size: 60px;
     font-family: Lora;
+  }
+
+  .toggle {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
   }
 
   .menu-icon {
@@ -363,18 +371,18 @@
   .menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 72px 48px;
     position: fixed;
     top: 0;
     right: -280px; /* 화면 오른쪽 밖으로 숨기기 */
     width: 280px;
-    height: 100vh; /* 전체 높이로 설정 */
-    background-color: #1a1a1a;
+    height: 640px; /* 전체 높이로 설정 */
+    background-color: #ffffff;
     opacity: 0.9; /* 투명도 */
     z-index: 10;
     transition: transform 0.3s ease; /* 부드러운 이동 효과 */
     transform: translateX(280px); /* 오른쪽에서 들어오게 설정 */
+    color: #220953;
   }
 
   .menu-checkbox:checked ~ .menu {
@@ -398,17 +406,36 @@
     display: none; /* 체크박스는 화면에 보이지 않음 */
   }
 
-/*hero section (section1)*/
-.hero-section-container {
+  .menu a:hover {
+    background: linear-gradient(to left, #8b52ff, #ff52ae);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  /*hero section (section1)*/
+  .circle-image {
+    position: absolute;
+    top: 275px; /* Adjusted y-coordinate */
+    right: 50px; /* Adjusted x-coordinate */
+    width: 16px; /* Adjusted size */
+    height: auto;
+    z-index: 2; /* Placed behind the text */
+  }
+
+  .plus-image {
+    position: absolute;
+    top: 130px; /* Adjusted y-coordinate */
+    left: 0px; /* Adjusted x-coordinate */
+    width: 50px; /* Reduced size */
+    height: auto;
+    z-index: 1; /* Placed behind the text */
+  }
+
+  .hero-section-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* padding: 40px 24px 32px 24px; */
-  }
-
-  .hero-section-container img {
-    width: 320px;
   }
 
   .hero-section-text {
@@ -417,6 +444,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative;
   }
 
   .hero-section-text h1 {
@@ -430,7 +458,7 @@
   .yoga-rectangle {
     width: 123px;
     height: 66px;
-    background: linear-gradient(135deg, #8b52ff, #ff52ae);
+    background: linear-gradient(135deg, #ff52ae, #8b52ff);
     border-radius: 15px;
     padding: 0px 15px 10px 10px;
     color: white;
@@ -438,25 +466,23 @@
     display: inline-block;
   }
 
-
   .hero-section-text p {
     font-size: 0.938rem;
     font-weight: 400;
     font-family: poppins;
     margin-top: 19px;
-    color: #4B3E65;
+    color: #4b3e65;
   }
 
-  .mobile-hero-line-break::after {
-    content: '\A'; /* 줄바꿈 */
+  .mobile-line-break::after {
+    content: "\A"; /* 줄바꿈 */
     white-space: pre; /* 줄바꿈을 처리할 수 있도록 설정 */
-}
+  }
 
-
-.hero-section-text button {
-    background: linear-gradient(135deg, #8b52ff, #ff52ae); /* 그라데이션 배경 */
+  .hero-section-text button {
+    background: linear-gradient(135deg, #ff52ae, #8b52ff); /* 그라데이션 배경 */
     font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     border-radius: 50px;
     border: none;
     color: white;
@@ -468,21 +494,21 @@
     justify-content: space-between; /* 텍스트와 화살표가 양쪽 끝에 배치 */
     cursor: pointer;
   }
-  
+
   .hero-section-text button .button-arrow {
     width: 24px; /* 화살표 너비 설정 */
     height: auto; /* 비율 유지하면서 높이 자동 설정 */
     display: block;
     object-fit: contain; /* 이미지 비율 유지 및 크기 조정 */
     max-width: 100%; /* 부모 요소 내에서 이미지 크기를 제한 */
-}
+  }
 
   .hero-section-number-container {
     display: flex;
     gap: 4em;
     margin-top: 48px;
   }
-  
+
   .hero-section-number-container {
     display: flex;
     gap: 1.75em;
@@ -508,9 +534,12 @@
     font-family: poppins;
     font-weight: 400;
   }
+  .home-yoga-image img {
+    width: 320px;
+  }
 
   /* section2 */
-  .section2-container{
+  .section2-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -518,51 +547,59 @@
     margin: 32px 0;
   }
 
-  .section2-image{
+  .section2-image {
     display: flex;
     flex-direction: row;
     gap: 25px;
     align-items: center;
     justify-content: center;
   }
-  .section2-image img{
+
+  .section2-image img {
     width: 230px;
   }
-  .section2-container h2{
+  .section2-container h2 {
     font-size: 3.5rem;
     font-weight: 500;
     font-family: Lora;
     margin-right: 32px;
   }
 
-
-  .section2-container p{
+  .section2-container p {
     width: 340px;
-    margin-top:46px;
-    margin-bottom:32px;
+    margin-top: 46px;
+    margin-bottom: 32px;
     font-weight: 300;
     font-family: poppins;
     text-align: center;
   }
 
+  .section2-get {
+    position: relative;
+  }
+
+  .liststar {
+    position: absolute;
+    top: 0px; /* 텍스트 위로 약간 이동 */
+    left: -10px; /* 텍스트의 왼쪽 상단에 배치 */
+  }
 
   .next-container {
     position: relative; /* 자식 요소를 절대 위치로 배치하기 위한 상대적 위치 설정 */
     width: 200px; /* 컨테이너 너비 설정 */
     height: 200px; /* 컨테이너 높이 설정 */
-    
   }
-  
+
   .ellipse-image {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 150px;
     height: auto;
     z-index: 1;
   }
-  
+
   .next-button {
     position: absolute;
     top: 50%;
@@ -577,11 +614,129 @@
     color: transparent;
     font-family: poppins;
   }
-  
+
   .next-arrow {
     margin-left: 8px;
     width: 14px;
     height: 14px;
   }
 
+  .section2-oval-container {
+    position: relative;
+    background-color: #e6ddfa; /* 배경색 */
+    border-radius: 200px; /* 둥근 직사각형 배경 */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    width: 230px;
+    height: 100px;
+  }
+  
+  .section2-oval-container img {
+    width: 180px; /* 이미지 크기 조정 */
+    border-radius: 50px; /* 이미지의 모서리 둥글게 */
+    top: -100px;
+
+  }
+
+  /* section3 */
+  .section3-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .section3-image {
+    position: relative;
+    width: 320px; /* 큰 이미지의 너비 */
+    height: auto; /* 높이는 자동으로 조정 */
+  }
+  .section3-main {
+    width: 100%;
+  }
+
+  .gradation-text {
+    background: linear-gradient(to left, #8b52ff, #ff52ae);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: poppins;
+  }
+
+  .section3-sticker1 {
+    position: absolute;
+    top: 72px;
+    left: 8px;
+
+    background-color: white;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: poppins;
+    font-weight: 400;
+    text-align: left;
+  }
+
+  .section3-sticker2 {
+    position: absolute;
+    bottom: 32px;
+    right: 8px;
+    text-align: left;
+
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-family: poppins;
+    font-weight: 400;
+  }
+
+  .section3-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section3-text h1 {
+    font-size: 1.75rem;
+    font-family: Lora;
+    font-weight: 400;
+    margin-bottom: 24px;
+    color: #220953;
+    text-align: center;
+  }
+
+  .section3-text p {
+    font-family: poppins;
+    font-size: 0.938rem;
+    font-weight: 400;
+    color: #4b3e65;
+  }
+
+  .section3-text button {
+    background: linear-gradient(135deg, #ff52ae, #8b52ff);
+    padding: 1em 1.5em;
+    width: 10em;
+    margin: 31px 0;
+    display: flex;
+    gap: 10px;
+    font-size: 1rem;
+    font-family: poppins;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+  }
+
+  .section3-text button .button-arrow {
+    width: 24px; /* 화살표 너비 설정 */
+  }
 }

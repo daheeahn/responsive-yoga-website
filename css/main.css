@@ -15,16 +15,24 @@ body:has(#toggle-mode:checked) {
   background-color: #14092a;
 }
 body:has(#toggle-mode:checked) {
-  .anytime-container .left-box h1 {
+  .anytime-container .left-box h1,
+  .hero-section-text h1,
+  .hero-section-number,
+  .section2-container h2,
+  .section3-text h1 {
     color: #d1c0f1;
   }
-  .anytime-container .left-box p {
+  .anytime-container .left-box p,
+  .section2-container p,
+  .hero-section-text p,
+  .section3-text p {
     color: #a094b8;
   }
   .anytime-container .right-box .box-routine {
     background: #372a51;
   }
-  .follow-container > .h1-follow-us {
+  .follow-container > .h1-follow-us,
+  .menu {
     color: #d1c0f1;
   }
   #yoga-img-1 {
@@ -35,6 +43,28 @@ body:has(#toggle-mode:checked) {
   }
   footer {
     background-color: #14092a;
+  }
+  .section3-sticker1,
+  .section3-sticker2 {
+    background-color: #372a51;
+    color: #d1c0f1;
+  }
+  .section2-oval-container{
+    background-color: #372A51;
+  }
+
+  @media (max-width: 700px) {
+    .menu {
+      background-color: #1a1a1a;
+    }
+    .menu a {
+      color: #d1c0f1;
+    }
+    .menu a:hover {
+      background: linear-gradient(to left, #8b52ff, #ff52ae);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
   }
 }
 
@@ -51,13 +81,19 @@ body:has(#toggle-mode:checked) .dark-icon {
 }
 
 .light-icon {
-  font-size: 1.5rem;
-  margin-right: 10px;
   display: none;
 }
 
 .dark-icon {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
+}
+
+.light-icon,
+.dark-icon {
+  width: 24px; /* 아이콘 크기 고정 */
+  height: 24px;
+  margin: 0; /* 여백을 없앰 */
+  padding: 0; /* 패딩 없앰 */
 }
 
 .navbar input {

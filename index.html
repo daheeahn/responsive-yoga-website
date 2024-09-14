@@ -26,28 +26,42 @@
       <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
       <div class="menu">
         <label for="menu-toggle" class="close-button">
-          <img src="assets/nav/ri_close-fill.png">
+          <span class="light-icon">
+            <img src="assets/nav/ri_close-fill.png" alt="Light Mode" />
+          </span>
+          <span class="dark-icon">
+            <img src="assets/nav/ri_close-fill-2.png" alt="Dark Mode" />
+          </span>
         </label>
         <a href="#home">Home</a>
-        <a href="#about">Health</a>
-        <a href="#services">Routine</a>
-        <a href="#contact">Follow</a>
+        <a href="#health">Health</a>
+        <a href="#routine">Routine</a>
+        <a href="#follow">Follow</a>
       </div>
 
       <!-- toggle -->
-      <div>
-        <input type="checkbox" id="toggle-mode" value="Mode" />
-        <label for="toggle-mode" class="toggle-button">
-          <span class="light-icon">
-            <img src="assets/nav/ri_sun-line.png" alt="Light Mode" />
-          </span>
-          <span class="dark-icon">
-            <img src="assets/nav/ri_moon-line.png" alt="Dark Mode" />
-          </span>
-        </label>
-        <label for="menu-toggle" class="menu-icon">
-          <img src="assets/nav/ri_apps-2-line.png" alt="Menu" />
-        </label>
+      <div class="toggle">
+        <div>
+          <input type="checkbox" id="toggle-mode" value="Mode" />
+          <label for="toggle-mode" class="toggle-button">
+            <span class="light-icon">
+              <img src="assets/nav/ri_sun-line.png" alt="Light Mode" />
+            </span>
+            <span class="dark-icon">
+              <img src="assets/nav/ri_moon-line.png" alt="Dark Mode" />
+            </span>
+          </label>
+        </div>
+        <div>
+          <label for="menu-toggle" class="menu-icon">
+            <span class="light-icon">
+              <img src="assets/nav/ri_apps-2-line-2.png" alt="Light Mode" />
+            </span>
+            <span class="dark-icon">
+              <img src="assets/nav/ri_apps-2-line.png" alt="Dark Mode" />
+            </span>
+          </label>
+        </div>
       </div>
     </div>
   </nav>
@@ -55,62 +69,112 @@
   <body>
     <main>
       <!-- section1 -->
-      <section class="hero-section-container">
+      <section class="hero-section-container" id="home">
         <div class="hero-section-text">
-          <h1 >
+          <img src="assets/section1/home-circle.png" class="circle-image" />
+          <img src="assets/section1/home-star.png" class="plus-image" />
+          <h1>
             Choose Your <br />
             Best <span class="yoga-rectangle">Yoga</span> <br />Teacher
           </h1>
-        <p>
-          Calm your mind and body with the best <span class="mobile-hero-line-break"></span> yoga <span class="desktop-hero-line-break"></span> teachers available,
-          relax your day <span class="mobile-hero-line-break"></span> and stay positive.
-        </p>
-        <button>
-          Get Started Free
-          <img src="./assets/ri_arrow-right.png" class="button-arrow"/>
-        </button>
-        <div class="hero-section-number-container">
-          <div class="hero-section-number">
-            <h2>300+</h2>
-            <p>Yoga class</p>
-          </div>
-          <div class="hero-section-number">
-            <h2>40+</h2>
-            <p>Participants</p>
+          <p>
+            Calm your mind and body with the best
+            <span class="mobile-line-break"></span> yoga
+            <span class="desktop-line-break"></span> teachers available, relax
+            your day <span class="mobile-line-break"></span> and stay positive.
+          </p>
+          <button>
+            Get Started Free
+            <img src="./assets/ri_arrow-right.png" class="button-arrow" />
+          </button>
+          <div class="hero-section-number-container">
+            <div class="hero-section-number">
+              <h2>300+</h2>
+              <p>Yoga class</p>
+            </div>
+            <div class="hero-section-number">
+              <h2>40+</h2>
+              <p>Participants</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <img src="assets/section1/home-yoga.png" alt="hero-section">
-      </div>
+        <div class="home-yoga-image">
+          <img src="assets/section1/home-yoga.png" alt="hero-section" />
+        </div>
       </section>
       <!-- section2 -->
-      <section class="section2-container">
+      <section class="section2-container" id="health">
         <div class="section2-image">
-        <h2>#01</h2>
-        <img src="assets/section2/section2-yoga.png" alt="section2">
+          <h2>#01</h2>
+          <div class="section2-oval-container">
+            <h3></h3>
+          <img src="assets/section2/list-yoga.png" alt="section2" />
         </div>
-        <p>Get a list of specific influencers in your niche at your fingertips so you can focus on managing your status.</p>
+        </div>
+        <div class="section2-get">
+          <img src="assets/section2/liststar-2-img.png" class="liststar" />
+          <p>
+            Get a list of specific influencers in your niche at your fingertips
+            so you can focus on managing your status.
+          </p>
+        </div>
         <div class="next-container">
-          <img src="assets/section2/ellipse.png" alt="next" class="ellipse-image">
+          <img
+            src="assets/section2/ellipse.png"
+            alt="next"
+            class="ellipse-image"
+          />
           <div class="next-text">
             <button class="next-button">
               Next
-              <img src="./assets/section2/ri_arrow-right-line.png" class="next-arrow"/>
+              <img
+                src="./assets/section2/ri_arrow-right-line.png"
+                class="next-arrow"
+              />
             </button>
           </div>
         </div>
-        
       </section>
       <!-- section3 -->
-      <section></section>
+      <section class="section3-container">
+        <div class="section3-image">
+          <img src="assets/section3/man-fitness.png" class="section3-main" />
+          <div class="section3-sticker1">
+            <img src="./assets/section3/Description box icon.png" />
+            <div>
+              <p>Heart Rate</p>
+              <p class="gradation-text">168bpm</p>
+            </div>
+          </div>
+          <div class="section3-sticker2">
+            <p class="gradation-text">500+</p>
+            <p>Free Courses</p>
+          </div>
+        </div>
+        <div class="section3-text">
+          <h1>
+            Bring Happiness To <br />
+            Good Health!
+          </h1>
+          <p>
+            If you take care of your good health, take<span
+              class="mobile-line-break"
+            ></span>
+            care of your mentality and
+            <span class="desktop-line-break"></span> a healthy<span
+              class="mobile-line-break"
+            ></span>
+            life with positive thoughts every day.
+          </p>
+          <button>
+            Let's start
+            <img src="./assets/ri_arrow-right.png" class="button-arrow" />
+          </button>
+        </div>
+      </section>
 
-
-
-
-      
       <!-- section4 -->
-      <section class="anytime-container">
+      <section class="anytime-container" id="routine">
         <div class="left-box">
           <h1>Anytime, Any Place, Any Workout</h1>
           <p>
@@ -138,7 +202,8 @@
         </div>
       </section>
 
-      <section class="follow-container">
+      <!-- section 5 -->
+      <section class="follow-container" id="follow">
         <h1 class="h1-follow-us">Follow Us On Instagram</h1>
         <h1 class="h1-yoga">#YOGA</h1>
 
@@ -169,6 +234,7 @@
         </div>
       </section>
 
+      <!-- section6 -->
       <section class="join-container">
         <h1>Join our newsletter</h1>
         <p>
