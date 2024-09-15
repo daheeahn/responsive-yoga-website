@@ -535,7 +535,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 48px 0;
+    /* padding:  0; */
+    margin-top: 128px;
+    margin-bottom: 48px;
   }
   .section2-container h2 {
     font-size: 3.5rem;
@@ -565,8 +567,9 @@
   .section2-oval-container img {
     width: 400px; /* 이미지 크기 조정 */
     border-radius: 50px; /* 이미지의 모서리 둥글게 */
-    top: -100px;
-
+    top: -80px;
+    position: absolute;
+    left: -5px;
   }
   
 
