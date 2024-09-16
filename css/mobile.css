@@ -14,6 +14,7 @@
   }
   .anytime-container .left-box h1 {
     font-weight: 400;
+    font-family: Lora;
     font-size: 32px;
     line-height: 41px;
     text-align: center;
@@ -23,6 +24,7 @@
   .anytime-container .left-box p {
     font-weight: 400;
     font-size: 15px;
+    font-family: poppins;
     line-height: 22px;
     text-align: center;
     color: #4b3e65;
@@ -59,7 +61,6 @@
   #yoga-img-1 {
     max-width: 250px;
     max-height: 170px;
-    object-fit: contain;
     z-index: 2;
     position: relative;
     border: 5px solid #f5f0ff;
@@ -69,7 +70,6 @@
   #yoga-img-2 {
     max-width: 240px;
     max-height: 150px;
-    object-fit: contain;
     position: absolute;
     top: 120px;
     right: 100px;
@@ -100,7 +100,6 @@
   .anytime-container .right-box .box-routine img {
     width: 20px;
     height: 26px;
-    object-fit: contain;
   }
   .anytime-container .right-box .box-routine p {
     font-weight: 500;
@@ -121,6 +120,7 @@
   .follow-container > .h1-follow-us {
     width: 225px;
     font-weight: 400;
+    font-family: Lora;
     font-size: 32px;
     line-height: 41px;
     text-align: center;
@@ -129,6 +129,7 @@
   .follow-container > .h1-yoga {
     font-weight: 400;
     font-size: 32px;
+    font-family: Lora;
     line-height: 41px;
     text-align: center;
     background: linear-gradient(73.19deg, #ff52af 11.6%, #9f53ff 83.86%);
@@ -212,6 +213,7 @@
     width: 253px;
     font-weight: 400;
     font-size: 28px;
+    font-family: Lora;
     line-height: 36px;
     text-align: center;
     color: #ffffff;
@@ -220,6 +222,7 @@
   .join-container > p {
     max-width: 300px;
     font-weight: 400;
+    font-family: poppins;
     font-size: 15px;
     line-height: 22px;
     text-align: center;
@@ -243,6 +246,7 @@
   .subscribe-input-container > input::placeholder {
     font-weight: 400;
     font-size: 13px;
+    font-family: poppins;
     line-height: 20px;
     color: #a197b4;
   }
@@ -261,6 +265,7 @@
   }
   .subscribe-input-container > button > p {
     font-weight: 500;
+    font-family: poppins;
     font-size: 16px;
     line-height: 24px;
     color: #ffffff;
@@ -279,6 +284,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #a197b4;
+    font-family: poppins;
     max-width: 200px;
   }
   footer h1 {
@@ -306,9 +312,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     align-self: flex-start;
+    font-family: Lora;
   }
   footer .info-section h1 {
     color: #fff;
+    font-family: Lora;
   }
   footer > .division {
     border: 0.5px solid #a197b4;
@@ -335,6 +343,7 @@
     font-size: 13px;
     line-height: 20px;
     color: #a197b4;
+    font-family: poppins;
   }
 
   /* nav */
@@ -546,7 +555,6 @@
     align-items: center;
     margin-top: 62px;
     margin-bottom: 32px;
-  
   }
 
   .section2-image {
@@ -634,13 +642,12 @@
     width: 230px;
     height: 100px;
   }
-  
+
   .section2-oval-container img {
     width: 180px; /* 이미지 크기 조정 */
     border-radius: 50px; /* 이미지의 모서리 둥글게 */
     top: -20px;
     position: absolute;
-    
   }
 
   /* section3 */
